@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Journal';
+  src: url("../../../fonts/journal.ttf") format("truetype"); }
+
+.navTitle-container {
+  background-color: black;
+  width: 100%;
+  padding: 5px 0;
+  color: white;
+}
+
+.subtitle {
+  font-family: "Tinos", serif;
+  font-size: 20px;
+  padding: 0;
+  color: white; }
+
+.top-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  width: 330px;
+  padding: 0 0 0 15px;
+  margin: 0 auto -20px auto;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: white; }
+
+.middle-text {
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+  justify-content: center;
+  height: 100px;
+}
+
+.bottom-text, .last {
+  font-size: 100px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.logo {
+  font-family: 'Journal';
+  color: #FEBAAA;
+  font-size: 100px;
+}
+
+.subtitle {
+  font-family: 'Slabo';
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 600px) {
+  .top-text {
+    font-size: 30px;
+    text-align: center; }
+}

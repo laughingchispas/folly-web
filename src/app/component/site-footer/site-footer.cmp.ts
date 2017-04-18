@@ -7,5 +7,4 @@ import {Component} from '@angular/core';
 })
 
 export class SiteFooterComponent {
-  email: string = 'laughingchispas@gmail.com';
 }

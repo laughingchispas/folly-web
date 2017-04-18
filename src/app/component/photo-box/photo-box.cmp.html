@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <script src="js/main.js"></script>
+  <script src="js/jquery.1.9.1.js"></script>
+  <script src="js/jquery.cycle.all.js"></script>
+  <script src="js/slide.js"></script>
+
+  <title>Title</title>
+
+  <script>
+    System.config({
+      packages: {
+        app: {
+          format: 'register',
+          defaultExtension: 'js'
+        }
+      }
+    });
+    System.import('app/boot')
+      .then(null, console.error.bind(console));
+  </script>
+</head>
+<body>
+
+<div class="gallery-container">
+  <div id="links">
+    <a href="../../../assets/les_filles.jpg" title="In Praise of Folly: Credit Julie Calbert">
+      <img src="../../../assets/les_filles_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/circle.jpg"  title="In Praise of Folly: Credit Julie Calbert">
+      <img src="../../../assets/circle_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/fu.jpg"  title="In Praise of Folly: Credit Julie Calbert">
+      <img src="../../../assets/fu_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/maia_marillion.png"  title="Maia Frankowski - Marillion Show Port Zélande">
+      <img src="../../../assets/maia_marillion_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/robes.jpg"  title="In Praise of Folly: Credit Julie Calbert">
+      <img src="../../../assets/robes_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/annemie.png"  title="In Praise of Folly: Credit Hugo Fustier">
+      <img src="../../../assets/annemie_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/forest.jpg"  title="In Praise of Folly: Credit Julie Calbert">
+      <img src="../../../assets/forest_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/meg.png"  title="Margaret Hermant - Credit Hugo Fustier">
+      <img src="../../../assets/meg_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/4.jpg"  title="In Praise of Folly: Credit Julie Calbert">
+      <img src="../../../assets/4_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/filles_walk.jpg"  title="In Praise of Folly: Credit Julie Calbert">
+      <img src="../../../assets/filles_walk_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/marillion.jpg"  title="Marillion in Port Zélande. Photo credit Alison Toon">
+      <img src="../../../assets/marillion_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/nicole_studio.png"  title="In Praise of Folly: Credit Hugo Fustier">
+      <img src="../../../assets/nicole_studio_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/velos.png"  title="In Praise of Folly: Credit Hugo Fustier">
+      <img src="../../../assets/velos_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/4tet.jpg"  title="In Praise of Folly: Credit Hugo Fustier">
+      <img src="../../../assets/4tet_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/haa.jpg"  title="Marillion in Port Zélande">
+      <img src="../../../assets/haa_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/circle.jpg"  title="In Praise of Folly: Credit Julie Calbert">
+      <img src="../../../assets/circle_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/back.jpg"  title="In Praise of Folly: Credit Julie Calbert">
+      <img src="../../../assets/back_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/marillion_quartet.png"  title="Performance with Marillion - Port Zélande, NL">
+      <img src="../../../assets/marillion_quartet_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/studio.jpg"  title="Studio Recording: La Savonnerie, Brussels">
+      <img src="../../../assets/studio_tn.jpg" class="gallery-item">
+    </a>
+    <a href="../../../assets/end_of_the_world.png"  title="Performance with Marillion - Port Zélande, NL">
+      <img src="../../../assets/end_of_the_world_tn.jpg" class="gallery-item">
+    </a>
+  </div>
+
+  <div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides" style="width: 950px;"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+  </div>
+
+  <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+  </div>
+
+  <script>
+    blueimp.Gallery(
+      document.getElementById('links').getElementsByTagName('a'),
+      {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+      }
+    );
+  </script>
+
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/hideaddressbar.js"></script>
+<script src="js/jquery.1.9.1.js"></script>
+<script src="js/jquery.cycle.all.js"></script>
+
+<script src="js/blueimp-gallery.min.js"></script>
+<script src="js/blueimp-gallery-fullscreen.js"></script>
+<script src="js/blueimp-gallery-indicator.js"></script>
+
+<script>
+  document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+      link = target.src ? target.parentNode : target,
+      options = {index: link, event: event},
+      links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+  };
+</script>
+
+</body>
+</html>

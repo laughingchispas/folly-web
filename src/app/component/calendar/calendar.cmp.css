@@ -1,0 +1,161 @@
+#past-tour {
+  padding: 15px 0 30px 0; }
+
+#calendar {
+  padding: 0 0 -100px 0; }
+
+#site-navigation-main {
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: #FEBAAA; }
+
+.tour-nest {
+  position: relative;
+  width: 100%;
+  color: black;
+  padding: 15px 0 0 0;
+  background-color: white; }
+.tour-nest .tour-title {
+  color: black;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 0 5px 0; }
+.tour-nest a {
+  text-decoration: none;
+  color: black; }
+.tour-nest a:hover {
+  color: #912B43; }
+.tour-nest .tour-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 10px 13px 10px;
+  margin: 0 40px;
+  border: 0.1px gray;
+  border-bottom-style: solid; }
+.tour-nest .tour-item .concert-info-date {
+  width: 120px;
+  flex-grow: 1; }
+.tour-nest .tour-item .concert-info-date .date {
+  width: 50px;
+  text-transform: uppercase; }
+.tour-nest .tour-item .concert-info-date .day {
+  width: 50px;
+  padding: 0 170px 0 0; }
+.tour-nest .tour-item .concert-info-artist {
+  width: 120px;
+  flex-grow: 3;
+  text-align: left; }
+.tour-nest .tour-item .concert-info-artist .venue {
+  padding: 0 50px 0 0; }
+.tour-nest .tour-item .concert-info-artist .artist {
+  padding: 0 50px 0 0; }
+.tour-nest .tour-item .concert-info-artist .location {
+  padding: 0 50px 0 0; }
+.tour-nest .tour-item .tickets {
+  width: 100px;
+  flex-grow: 1;
+  background-color: gray;
+  color: white;
+  padding: 5px 8px;
+  text-transform: uppercase;
+  width: 80px;
+  text-align: center;
+  font-size: 11px; }
+.tour-nest .tour-item .tickets-past {
+  width: 100px;
+  flex-grow: 1;
+  background-color: gray;
+  color: pink;
+  padding: 5px 8px;
+  text-transform: uppercase;
+  width: 80px;
+  text-align: left;
+  font-size: 11px;
+  text-align: center; }
+.tour-nest .tour-item .tickets:hover {
+  color: #912B43;
+  background-color: black; }
+
+@media only screen and (min-width: 720px) {
+  .tour-nest {
+    width: 100%;
+    padding: 15px 0 0 0; }
+  .tour-nest .tour-title {
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 0 0 5px 0; }
+  .tour-nest .tour-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 10px 13px 10px;
+    margin: 0 40px; }
+  .tour-nest .tour-item .concert-info-date {
+    width: 150px;
+    text-align: left;
+    flex-grow: 1; }
+  .tour-nest .tour-item .concert-info-date .date {
+    width: 60px; }
+  .tour-nest .tour-item .concert-info-date .day {
+    width: 70px;
+    padding: 0 10px 0 0; }
+  .tour-nest .tour-item .concert-info-artist {
+    display: flex;
+    flex-grow: 2;
+    width: 400px; }
+  .tour-nest .tour-item .concert-info-artist .venue {
+    width: 130px;
+    padding: 0 10px 0 0; }
+  .tour-nest .tour-item .concert-info-artist .artist {
+    width: 130px;
+    padding: 0 10px 0 0; }
+  .tour-nest .tour-item .concert-info-artist .location {
+    width: 90px;
+    padding: 0 10px 0 0; }
+  .tour-nest .tour-item .tickets {
+    flex-grow: 1;
+    padding: 5px 8px;
+    width: 100px;
+    font-size: 15px; }
+  .tour-nest .tour-item .tickets-past {
+    flex-grow: 1;
+    padding: 5px 8px;
+    width: 100px;
+    font-size: 15px; } }
+@media only screen and (min-width: 1180px) {
+  .tour-nest .tour-title {
+    font-size: 25px;
+    padding: 0 0 5px 0; }
+  .tour-nest .tour-item {
+    align-items: center;
+    padding: 15px 10px 13px 10px;
+    margin: 0 40px; }
+  .tour-nest .tour-item .concert-info-date {
+    display: flex;
+    width: 230px; }
+  .tour-nest .tour-item .concert-info-date .date {
+    width: 90px;
+    padding: 0 40px 0 0; }
+  .tour-nest .tour-item .concert-info-date .day {
+    width: 70px;
+    padding: 0 100px 0 0; }
+  .tour-nest .tour-item .concert-info-artist .venue {
+    width: 170px;
+    padding: 0 50px 0 0; }
+  .tour-nest .tour-item .concert-info-artist .artist {
+    width: 130px;
+    padding: 0 50px 0 0; }
+  .tour-nest .tour-item .concert-info-artist .location {
+    width: 120px;
+    padding: 0 50px 0 0; }
+  .tour-nest .tour-item .tickets {
+    padding: 5px 8px;
+    width: 80px; }
+  .tour-nest .tour-item .tickets-past {
+    padding: 5px 8px;
+    width: 80px; } }
+
+/*# sourceMappingURL=tour.css.map */

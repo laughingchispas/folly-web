@@ -1,18 +1,48 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { SiteFooterComponent } from './component/site-footer/site-footer.cmp';
+import {
+  AboutComponent,
+  CalendarComponent,
+  HomeComponent,
+  MediaComponent,
+  PhotoBoxComponent,
+  NavigationComponent,
+  SiteContactComponent,
+  SiteFooterComponent,
+  TopBannerComponent,
+  VideoComponent
+} from './component/';
+
+const appRoutes: Routes = [
+  { path: 'calendar', component: CalendarComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: SiteContactComponent },
+  { path: 'media', component: MediaComponent },
+  { path: '', component: HomeComponent },
+];
 
 @NgModule({
   declarations: [
+    AboutComponent,
     AppComponent,
-    SiteFooterComponent
+    CalendarComponent,
+    HomeComponent,
+    NavigationComponent,
+    MediaComponent,
+    PhotoBoxComponent,
+    SiteContactComponent,
+    SiteFooterComponent,
+    TopBannerComponent,
+    VideoComponent,
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

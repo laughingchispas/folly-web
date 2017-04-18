@@ -1,0 +1,80 @@
+#site-navigation-main {
+  background-color: #912B43;
+}
+
+#site-navigation-main nav {
+  height: 0;
+  overflow: hidden;
+  background-color: #912B43;
+}
+
+#site-navigation-main input[type=checkbox] {
+  position: absolute;
+  top: -999em;
+  left: -999em; }
+
+#site-navigation-main label {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 0;
+  height: 30px;
+  background: url("../../../assets/icon-menu.png") no-repeat center;
+  background-color: white;
+  width: 30px;
+  text-indent: -999em;
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none; }
+
+#site-navigation-main input[type=checkbox]:checked ~ nav {
+  height: auto;
+  overflow: hidden; }
+
+#site-navigation-main input[type=checkbox]:checked ~ label {
+  background-color: black;
+  background: url("../../../assets/x.png") no-repeat center; }
+
+nav {
+  display: block;
+  padding: 0 20px;
+  font-size: 30px;
+  background-color: #912B43; }
+nav a {
+  text-decoration: none;
+  color: white;
+  background-color: #912B43;}
+nav a:hover {
+  border-style: solid;
+  border-color: white;
+  border-width: 0 0 3px 0;
+  color: white; }
+nav a:active {
+  color: white; }
+nav .nav_item {
+  padding: 10px;
+  text-transform: uppercase; }
+
+@media only screen and (min-width: 720px) {
+  #site-navigation-main label {
+    display: none; }
+
+  #site-navigation-main nav {
+    height: auto;
+    width: auto;
+    overflow: visible; }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 100px;
+    background-color: #912B43;
+    font-size: 20px; }
+  nav .nav_item {
+    padding: 10px; } }
