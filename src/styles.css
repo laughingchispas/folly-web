@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Journal';
+  src: url("fonts/journal.ttf") format("truetype"); }
+
 
 body {
   padding: 0;

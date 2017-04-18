@@ -1,5 +1,7 @@
 #site-navigation-main {
   background-color: #912B43;
+  z-index: 4000;
+  position: relative;
 }
 
 #site-navigation-main nav {
