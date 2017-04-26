@@ -10,7 +10,8 @@ footer {
   position: relative;
 }
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .footer-icons {
   padding: 10px 0 0 0; }
@@ -19,7 +20,8 @@ a {
   background-color: #912B43;
   border-radius: 30px;
   height: 30px;
-  width: 30px; }
+  width: 30px;
+}
 
 .footer-info {
   font-size: 15px;
