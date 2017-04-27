@@ -5,6 +5,18 @@ body {
   margin: 0;
 }
 
+button {
+  background-color: limegreen;
+  position: relative;
+  z-index: 5000;
+}
+
+#demo {
+  background-color: lime;
+  position: relative;
+  z-index: 5000;
+}
+
 #page ul {
   list-style-type: none;
 
