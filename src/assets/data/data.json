@@ -1,0 +1,8 @@
+{
+	"title": "Cool title",
+	"subtitle": "Cool subtitle times",
+	"object": {
+		"coolThing": 1,
+		"otherThing": true
+	}
+}
